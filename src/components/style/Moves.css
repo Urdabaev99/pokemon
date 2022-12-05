@@ -1,0 +1,30 @@
+.movies {
+   width: 650px;
+   height: 340px;
+   margin: 0 auto;
+   overflow-x: scroll;
+   overflow-x: hidden;
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+   grid-gap: 1rem;
+}
+
+.movie {
+   margin: 0 auto;
+   font-size: 24px;
+}
+
+#element::-webkit-scrollbar {
+   width: 10px;
+}
+
+#element::-webkit-scrollbar-track {
+   background-color: #f9f9fd;
+   border-radius: 10px;
+}
+
+#element::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   background: linear-gradient(180deg, #18e96f, #ea0000);
+}

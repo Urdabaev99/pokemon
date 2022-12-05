@@ -1,0 +1,27 @@
+.BaseStats {
+   margin-top: 20px;
+   font-size: 24px;
+   width: 600px;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+
+
+.basestats-info {
+   width: 600px;
+   display: flex;
+   justify-content: space-between
+}
+
+.basestats-info {
+   margin-top: 10px;
+}
+
+.basestats-info p {
+   width: 100px;
+}
+
+
+progress::-webkit-progress-value {
+   background: rgb(226, 226, 231);
+}

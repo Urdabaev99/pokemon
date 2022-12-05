@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.rock {
+  background-color: rgb(148, 81, 81);
+  border-radius: 3rem;
+}
+
+.ghost {
+  background-color: rgb(247, 247, 247);
+  border-radius: 3rem;
+}
+
+.electric {
+  background-color: rgb(255, 255, 161);
+  border-radius: 3rem;
+}
+
+.bug {
+  background-color: #F6D6A7;
+  border-radius: 3rem;
+}
+
+.poison {
+  background-color: #e0a7f6;
+  border-radius: 3rem;
+}
+
+.normal {
+  background-color: #F4F4F4;
+  border-radius: 3rem;
+}
+
+.fairy {
+  background-color: rgba(247, 176, 188, 0.863);
+  border-radius: 3rem;
+}
+
+.fire {
+  background-color: #FBE3DF;
+  border-radius: 3rem;
+}
+
+.grass {
+  background-color: #bff0be;
+  border-radius: 3rem;
+}
+
+.water {
+  background-color: #E0F1FD;
+  border-radius: 3rem;
+}
+
+.card {
+  cursor: pointer;
+  border-radius: 3rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  transition: 1s;
+  display: block;
+}
+
+.card-img:hover {
+  transform: scale(1.2);
+}
+
+
+
+.card-id {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 30px;
+}
+
+
+.card-left h1 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.card-left h2 {
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: rgba(205, 214, 219, 0.3);
+  width: 100px;
+  height: 30px;
+  align-items: center;
+
+}
+
+.card-left h2::first-letter {
+  text-transform: uppercase;
+}
+
+.card-left h1::first-letter {
+  text-transform: uppercase;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
+  grid-gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+
+
+
+.d7:after {
+  content: "";
+  clear: both;
+  display: table
+}
+
+.d7 form {
+  width: auto;
+  float: right;
+}
+
+.d7 input {
+  background-image: url('./img/search.svg');
+  background-repeat: no-repeat;
+  background-position: 210px;
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+.d7 input:focus {
+  width: 300px;
+  background-position: 260px;
+}
+
+.d7 button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  top: -2px;
+  right: 0;
+}
+
+.d7 button:before {
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+}
+
+
+.footer-btn {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-btn button {
+  font-size: 25px;
+  border: none;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #569e2c;
+
+}
+
+
+
+
+
+@media(max-width:870px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media(max-width:900px) {
+  .container {
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
+    justify-content: center;
+    grid-gap: 2rem;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-id {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .card-left h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .card-img {
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+
+
+.react-tabs__tab-list {
+  border: none !important;
+  margin: 30px 0 20px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: none !important;
+  font-size: 1.5rem;
+  list-style: none;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid #fff !important;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 0px 12px;
+  cursor: pointer !important;
+  color: rgb(183, 183, 183) !important;
+}
+
+.detail-tab {
+  cursor: pointer !important;
+  border: none !important;
+  color: rgb(100, 100, 100);
+  margin-top: 10px;
+}
+
+
+.react-tabs__tab--selected {
+  border: none !important;
+  display: block !important;
+  content: '' !important;
+  color: #000;
+  border-bottom: solid 3px #e4000f !important;
+  padding-bottom: 10px;
+}
+
+.react-tabs__tab {
+  background: rgba(192, 110, 110, 0) !important;
+  padding-bottom: 0px !important;
+  border: none !important;
+  border-radius: none !important;
+  color: black !important;
+}
